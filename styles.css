@@ -1,0 +1,214 @@
+/* This is the CSS properties for the homepage. 
+#2E282A 
+#EDB88B
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-color: #2E282A ;
+    height: 100%;
+
+    /*used for div ordering
+    border: blue solid 2px;*/
+}
+
+.body-container {
+    background-color: #f0ebeb;
+    min-height: 82vh;
+    
+}
+
+.header {
+    height: fit-content;
+    padding: 10px;
+
+    /*used for div ordering
+    border: green solid; */
+}
+
+    .logo-header {
+       text-align: center; 
+       
+    }
+
+.nav-bar-container {
+    margin-top: 20px;
+    
+    /*used for div ordering
+    border: green solid; */
+}
+
+    nav {
+        color: white;
+        text-align: center;
+    }
+    .nav-bar {
+        margin: 10px;
+    }
+    .nav-bar:link {
+        color: white;
+        text-decoration: none;
+    }
+    .nav-bar:hover {
+        color: #EDB88B;
+    }
+
+    .promotion-container {
+        color: #2E282A;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+
+        /*used for div ordering
+        border: green solid;*/
+    }
+
+        .promotion-box {
+            height: 250px;
+            background-image: url("/jewelery1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(.4);
+            z-index: 8;
+            border-radius: 10px;
+        }
+
+        .text-promotion{
+            position: absolute;
+            width: auto;
+            height: 200px;
+            transform: translatey(40px);
+            text-align: left;
+            color: #f0ebeb;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 100px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            overflow: hidden;
+        }
+        @media (max-width: 800px) {
+            .text-promotion{
+                transform: none;
+                padding: none;
+                overflow: scroll;
+            }
+        }
+
+        .info-homepage{
+            text-align: left;
+            color: #2E282A;
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+        .info-homepage>h2 {
+            color: #2E282A;
+
+    
+        }
+
+        .items-container {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            display: flex;
+            
+
+            /*used for div ordering
+            border: orange solid; */
+        }
+
+        .items-box {
+            flex: auto;
+            width: 200px;
+            margin: 10px;
+            height: 200px;
+            color: #2E282A;
+            font-weight: 600; 
+            justify-content: center;
+            align-items: center;           
+            padding-left: 10px;
+            border-radius: 10px;
+            background-color: rgb(210, 210, 210);
+        }
+        .items-box:hover{
+            border: #2E282A solid 2px;
+        }
+        .rings{
+            background-image: url("/rings.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .necklace{
+            background-image: url("/necklace.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bracelet{
+            background-image: url("/bracelet.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+     
+
+.footer {
+    display: flex;
+    margin-top: 5px;
+    margin-top: 5px;
+    padding: 5px;
+
+    /*used for div ordering
+    border: yellow solid;*/
+}
+
+    .logo-footer {
+        width: 30%;
+        margin-left: 50px;
+
+        /*used for div ordering
+        border: blue solid 2px;*/
+    }
+
+    .copyright {
+        width: 70%;
+        color: white;
+        font-size: 1em;
+        text-align: right;
+        margin-right: 50px;
+
+        /*used for div ordering
+        border: blue solid 2px;*/
+    }
+@media (max-width: 800px) {
+    .info-homepage {
+        padding: 0px;
+    }
+    .items-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+        display: block;
+    }
+    .logo-footer{
+        width:auto;
+        text-align: center;
+        margin: 0px;
+    }
+    .copyright{
+        width: auto;
+        text-align: center;
+        margin: 0px;
+    }
+
+}    
